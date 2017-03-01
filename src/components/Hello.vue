@@ -8,7 +8,7 @@
            歌手：{{ item.artists[0].name }} <span v-on:click.stop="searchAlbum(item.album.id,item.album.name)"  @click="dialogTableVisible = true">专辑：{{item.album.name}} <i class="el-icon-menu"></i></span>
          </div>
          <el-button type="primary" v-on:click.stop="playMusic(item.id)">播放</el-button>
-         <a v-bind:href="'#/mv/mvid='+item.mvid">
+         <a v-bind:href="'http://music.163.com/#/mv?id='+item.mvid">
             <el-button>Mv</el-button>
          </a>
       </li>
@@ -23,7 +23,7 @@
              歌手：{{ item.album.artists[0].name }} <span @click="dialogTableVisible = true" v-on:click.stop="searchAlbum(item.album.id,item.album.name)">专辑：{{ item.album.name }} <i class="el-icon-menu"></i></span>
            </div>
            <el-button type="primary" v-on:click.stop="playMusic(item.id)">播放</el-button>
-           <a v-bind:href="'#/mv/mvid='+item.mvid">
+           <a v-bind:href="'http://music.163.com/#/mv?id='+item.mvid">
              <el-button>Mv</el-button>
            </a>
          </li>
