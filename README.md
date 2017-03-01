@@ -31,5 +31,4 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 使用了网易云的api是百度的moon大神的服务器端解析部分api可能不能使用了下面上项目截图
 个人歌单可以修改src里面的hello.vue来输入自己的playlistid 就能默认载入自己的网易云歌单了
 
-mv由于无法获取到数据所以只做了路由的展示
-
+mv由于网易云经过非常严格的加密 故只获取到了每首音乐的mvid来链接到网易云的mv页面了
