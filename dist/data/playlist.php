@@ -22,7 +22,7 @@ function get_playlist_info($playlist_id)
     return curl_get($url);
 }
 
-$id = 320201522;
+$id = $_GET['id'];
 $data = json_decode(get_playlist_info($id),true);
 
 
